@@ -257,13 +257,13 @@
     <div class="date" id="txtDate">24 APRILE 2027 &bull; THIENE (VI)</div>
 
     <p class="instruction" id="txtInstruction">
-      Inserisci la parola d'ordine per visualizzare i dettagli della nostra giornata.
+      Inserisci la password per visualizzare i dettagli della nostra giornata.
     </p>
 
     <form onsubmit="handleUnlock(event)">
       <div class="input-group">
-        <input type="password" id="passInput" class="password-input" placeholder="Parola d'ordine" autofocus required>
-        <div class="error-msg" id="errorMsg">Parola d'ordine non corretta. Riprova!</div>
+        <input type="password" id="passInput" class="password-input" placeholder="Password" autofocus required>
+        <div class="error-msg" id="errorMsg">Password non corretta. Riprova!</div>
       </div>
       <button type="submit" class="btn-submit" id="btnSubmit">Entra nel sito</button>
     </form>
@@ -277,10 +277,10 @@
       it: {
         badge: "Il nostro matrimonio",
         date: "24 APRILE 2027 • THIENE (VI)",
-        instruction: "Inserisci la parola d'ordine per visualizzare i dettagli della nostra giornata.",
-        placeholder: "Parola d'ordine",
+        instruction: "Inserisci la password per visualizzare i dettagli della nostra giornata.",
+        placeholder: "Password",
         btn: "Entra nel sito",
-        error: "Parola d'ordine non corretta. Riprova!"
+        error: "Password non corretta. Riprova!"
       },
       de: {
         badge: "Unsere Hochzeit",
@@ -315,7 +315,8 @@
         
         // Verifica se la decifratura ha prodotto HTML valido
         if (decryptedHtml && decryptedHtml.includes("<!DOCTYPE html>")) {
-          try { localStorage.setItem('wedding_auth', password); } catch(e){}
+          // Nessun salvataggio permanente in localStorage (richiede password alla riapertura)
+          try { localStorage.removeItem('wedding_auth'); } catch(e){}
           
           document.open();
           document.write(decryptedHtml);
@@ -340,20 +341,14 @@
       }
     }
 
-    // Accesso rapido via URL o localStorage
+    // Accesso rapido solo se esplicitamente passato nell'URL (?pass=!Bozen!)
     window.addEventListener('DOMContentLoaded', () => {
+      try { localStorage.removeItem('wedding_auth'); } catch(e){}
       const urlParams = new URLSearchParams(window.location.search);
       const urlPass = urlParams.get('pass') || urlParams.get('pwd');
       if (urlPass) {
-        if (decryptSite(urlPass)) return;
+        decryptSite(urlPass);
       }
-
-      try {
-        const savedPass = localStorage.getItem('wedding_auth');
-        if (savedPass) {
-          if (decryptSite(savedPass)) return;
-        }
-      } catch(e) {}
     });
   </script>
 </body>

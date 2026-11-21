@@ -1,0 +1,206 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradienti Petali Rose Bianche Realistiche -->
+    <linearGradient id="rosePetalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f5f7f3"/>
+      <stop offset="100%" stop-color="#d6ded3"/>
+    </linearGradient>
+    <linearGradient id="rosePetalGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#fafbf9"/>
+      <stop offset="100%" stop-color="#cdd6c9"/>
+    </linearGradient>
+    <radialGradient id="roseCenterShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9eb09a" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#cdd8c9" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gradienti Ortensia Blu/Azzurro Polvere (dell invito) -->
+    <linearGradient id="hydrangeaBlue1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8e8f5"/>
+      <stop offset="60%" stop-color="#8bb4d9"/>
+      <stop offset="100%" stop-color="#467299"/>
+    </linearGradient>
+    <linearGradient id="hydrangeaBlue2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eaf3fb"/>
+      <stop offset="50%" stop-color="#a2c5e4"/>
+      <stop offset="100%" stop-color="#5581a6"/>
+    </linearGradient>
+
+    <!-- Foglioline Eucalipto Salvia -->
+    <linearGradient id="eucalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ba58f"/>
+      <stop offset="100%" stop-color="#46634c"/>
+    </linearGradient>
+
+    <!-- Gradiente Oro Puro per Fedi e Croce -->
+    <linearGradient id="goldPure" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff9e6"/>
+      <stop offset="25%" stop-color="#f7d97d"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="75%" stop-color="#9e7b16"/>
+      <stop offset="100%" stop-color="#fce28b"/>
+    </linearGradient>
+
+    <!-- Ombra morbida per petali e fiori -->
+    <filter id="petalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#4a5e4b" flood-opacity="0.18"/>
+    </filter>
+
+    <filter id="ringShadow3D" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-color="#140f04" flood-opacity="0.55"/>
+      <feDropShadow dx="-1" dy="-1" stdDeviation="1.5" flood-color="#ffffff" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 1. RAMETTI VERDI DI SUPPORTO ED EUCALIPTO -->
+  <g stroke="#537059" stroke-width="2.5" stroke-linecap="round" opacity="0.85">
+    <path d="M 20 20 Q 110 80 200 180 Q 280 260 380 300" />
+    <path d="M 30 15 Q 160 50 300 130 Q 400 180 480 240" />
+    <path d="M 15 40 Q 70 160 130 300 Q 170 390 220 460" />
+  </g>
+  <g fill="url(#eucalGrad)" stroke="#324736" stroke-width="0.8" opacity="0.9">
+    <path d="M 80 50 C 110 35, 120 70, 95 85 C 75 75, 70 60, 80 50 Z"/>
+    <path d="M 140 70 C 175 55, 185 90, 160 105 C 135 95, 130 80, 140 70 Z"/>
+    <path d="M 220 95 C 255 80, 265 115, 240 130 C 215 120, 210 105, 220 95 Z"/>
+    <path d="M 50 120 C 35 150, 70 165, 85 140 C 75 120, 60 115, 50 120 Z"/>
+    <path d="M 85 200 C 70 230, 105 245, 120 220 C 110 200, 95 195, 85 200 Z"/>
+    <path d="M 120 280 C 105 310, 140 325, 155 300 C 145 280, 130 275, 120 280 Z"/>
+  </g>
+
+  <!-- 2. QUALCHE FIORE DI ORTENSIA AZZURRO POLVERE (Poche, come richiesto) -->
+  <!-- Grappolino ortensia 1 (in alto a destra) -->
+  <g id="hydrangea-cluster-1" filter="url(#petalShadow)">
+    <g transform="translate(325, 85)">
+      <path d="M-9,-3 C-11,-10 -3,-11 0,-6 C3,-11 11,-10 9,-3 C12,0 9,8 0,7 C-9,8 -12,0 -9,-3 Z" fill="url(#hydrangeaBlue1)" stroke="#467299" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+    </g>
+    <g transform="translate(345, 105)">
+      <path d="M-8,-2 C-10,-9 -2,-10 0,-5 C2,-10 10,-9 8,-2 C11,0 8,7 0,6 C-8,7 -11,0 -8,-2 Z" fill="url(#hydrangeaBlue2)" stroke="#467299" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+    </g>
+    <g transform="translate(315, 115)">
+      <path d="M-8,-2 C-10,-9 -2,-10 0,-5 C2,-10 10,-9 8,-2 C11,0 8,7 0,6 C-8,7 -11,0 -8,-2 Z" fill="url(#hydrangeaBlue1)" stroke="#467299" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+    </g>
+  </g>
+  <!-- Grappolino ortensia 2 (a sinistra) -->
+  <g id="hydrangea-cluster-2" filter="url(#petalShadow)">
+    <g transform="translate(60, 200)">
+      <path d="M-8,-2 C-10,-9 -2,-10 0,-5 C2,-10 10,-9 8,-2 C11,0 8,7 0,6 C-8,7 -11,0 -8,-2 Z" fill="url(#hydrangeaBlue1)" stroke="#467299" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+    </g>
+    <g transform="translate(75, 225)">
+      <path d="M-9,-3 C-11,-10 -3,-11 0,-6 C3,-11 11,-10 9,-3 C12,0 9,8 0,7 C-9,8 -12,0 -9,-3 Z" fill="url(#hydrangeaBlue2)" stroke="#467299" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.5" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- 3. ROSE BIANCHE REALISTICHE -->
+  <!-- GRANDE ROSA BIANCA 1 -->
+  <g id="rose-large-1" filter="url(#petalShadow)">
+    <path d="M 90 120 C 60 70, 140 50, 170 80 C 150 110, 120 120, 90 120 Z" fill="url(#rosePetalGrad1)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 170 80 C 220 70, 230 140, 190 160 C 170 140, 175 100, 170 80 Z" fill="url(#rosePetalGrad2)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 180 160 C 210 200, 140 230, 110 200 C 120 170, 160 170, 180 160 Z" fill="url(#rosePetalGrad1)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 110 200 C 60 210, 50 140, 90 120 C 100 150, 90 180, 110 200 Z" fill="url(#rosePetalGrad2)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 110 110 C 95 85, 155 75, 165 105 C 150 120, 125 125, 110 110 Z" fill="url(#rosePetalGrad2)" stroke="#a8baa4" stroke-width="1"/>
+    <path d="M 160 100 C 190 100, 185 150, 160 155 C 145 140, 155 115, 160 100 Z" fill="url(#rosePetalGrad1)" stroke="#a8baa4" stroke-width="1"/>
+    <path d="M 155 150 C 165 180, 120 185, 110 165 C 120 145, 145 150, 155 150 Z" fill="url(#rosePetalGrad2)" stroke="#a8baa4" stroke-width="1"/>
+    <path d="M 115 155 C 90 150, 95 110, 115 110 C 120 130, 110 145, 115 155 Z" fill="url(#rosePetalGrad1)" stroke="#a8baa4" stroke-width="1"/>
+    <circle cx="135" cy="135" r="26" fill="url(#roseCenterShadow)"/>
+    <path d="M 125 128 C 120 120, 145 118, 150 128 C 152 138, 138 142, 130 135" fill="none" stroke="#7e9c7b" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 130 134 C 125 130, 142 126, 144 135 C 144 140, 134 142, 132 138" fill="none" stroke="#688764" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- GRANDE ROSA BIANCA 2 -->
+  <g id="rose-large-2" filter="url(#petalShadow)">
+    <path d="M 150 250 C 120 200, 200 180, 230 210 C 210 240, 180 250, 150 250 Z" fill="url(#rosePetalGrad1)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 230 210 C 280 200, 290 270, 250 290 C 230 270, 235 230, 230 210 Z" fill="url(#rosePetalGrad2)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 240 290 C 270 330, 200 360, 170 330 C 180 300, 220 300, 240 290 Z" fill="url(#rosePetalGrad1)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 170 330 C 120 340, 110 270, 150 250 C 160 280, 150 310, 170 330 Z" fill="url(#rosePetalGrad2)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 170 240 C 155 215, 215 205, 225 235 C 210 250, 185 255, 170 240 Z" fill="url(#rosePetalGrad2)" stroke="#a8baa4" stroke-width="1"/>
+    <path d="M 220 230 C 250 230, 245 280, 220 285 C 205 270, 215 245, 220 230 Z" fill="url(#rosePetalGrad1)" stroke="#a8baa4" stroke-width="1"/>
+    <path d="M 215 280 C 225 310, 180 315, 170 295 C 180 275, 205 280, 215 280 Z" fill="url(#rosePetalGrad2)" stroke="#a8baa4" stroke-width="1"/>
+    <path d="M 175 285 C 150 280, 155 240, 175 240 C 180 260, 170 275, 175 285 Z" fill="url(#rosePetalGrad1)" stroke="#a8baa4" stroke-width="1"/>
+    <circle cx="195" cy="265" r="25" fill="url(#roseCenterShadow)"/>
+    <path d="M 185 258 C 180 250, 205 248, 210 258 C 212 268, 198 272, 190 265" fill="none" stroke="#7e9c7b" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 190 264 C 185 260, 202 256, 204 265 C 204 270, 194 272, 192 268" fill="none" stroke="#688764" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- ROSA BIANCA 3 -->
+  <g id="rose-medium-3" filter="url(#petalShadow)">
+    <path d="M 245 95 C 220 60, 280 45, 305 70 C 290 90, 265 100, 245 95 Z" fill="url(#rosePetalGrad1)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 305 70 C 340 65, 350 115, 320 130 C 305 115, 310 85, 305 70 Z" fill="url(#rosePetalGrad2)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 315 130 C 335 160, 285 180, 265 160 C 270 135, 300 135, 315 130 Z" fill="url(#rosePetalGrad1)" stroke="#b8c6b4" stroke-width="1"/>
+    <path d="M 265 160 C 230 165, 220 115, 245 95 C 255 120, 245 145, 265 160 Z" fill="url(#rosePetalGrad2)" stroke="#b8c6b4" stroke-width="1"/>
+    <circle cx="280" cy="115" r="20" fill="url(#roseCenterShadow)"/>
+    <path d="M 272 110 C 268 102, 288 100, 292 110 C 294 118, 282 122, 276 116" fill="none" stroke="#7e9c7b" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 4. MOLTISSIMA GIPSOFILA (Velo di sposa diffuso a raggiera) -->
+  <g stroke="#6e8a74" stroke-width="1.1" stroke-linecap="round" opacity="0.85">
+    <path d="M 280 180 L 340 160 M 340 160 L 370 140 M 340 160 L 385 170 M 340 160 L 360 195 M 385 170 L 415 160 M 385 170 L 420 185" />
+    <path d="M 310 210 L 365 230 M 365 230 L 405 215 M 365 230 L 425 240 M 365 230 L 390 270 M 405 215 L 440 210 M 425 240 L 450 255" />
+    <path d="M 260 250 L 330 290 M 330 290 L 375 285 M 330 290 L 360 325 M 330 290 L 390 335 M 360 325 L 380 360 M 390 335 L 420 345" />
+    <path d="M 180 320 L 195 380 M 195 380 L 170 415 M 195 380 L 220 425 M 195 380 L 235 390 M 220 425 L 245 450 M 170 415 L 175 455" />
+    <path d="M 130 290 L 110 350 M 110 350 L 80 375 M 110 350 L 115 400 M 110 350 L 140 370 M 115 400 L 105 440 M 80 375 L 60 405" />
+    <path d="M 190 70 L 220 30 M 220 30 L 205 10 M 220 30 L 245 15 M 220 30 L 255 40 M 245 15 L 270 12" />
+    <path d="M 80 90 L 40 60 M 40 60 L 20 50 M 40 60 L 30 75 M 40 60 L 50 35 M 30 75 L 15 85" />
+  </g>
+
+  <!-- Fiorellini di Gipsofila bianchi sparsi ovunque -->
+  <g filter="url(#petalShadow)">
+    <!-- Destra -->
+    <g transform="translate(370, 140)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(385, 170)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(415, 160)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(420, 185)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(360, 195)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(405, 215)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(440, 210)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(425, 240)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(450, 255)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(390, 270)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(375, 285)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(360, 325)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(390, 335)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(380, 360)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(420, 345)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <!-- In basso -->
+    <g transform="translate(170, 415)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(220, 425)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(245, 450)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(175, 455)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(80, 375)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(115, 400)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(105, 440)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <!-- In alto -->
+    <g transform="translate(245, 15)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(270, 12)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(30, 75)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+    <g transform="translate(15, 85)"><circle cx="-3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="3" cy="0" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="-3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="3" r="2.8" fill="#fff" stroke="#bdd0bc" stroke-width="0.5"/><circle cx="0" cy="0" r="1.4" fill="#d4af37"/></g>
+  </g>
+
+  <!-- 5. CROCE CATTOLICA E FEDI NUZIALI ACCANTO -->
+  <g id="rings-and-cross-adjacent" filter="url(#ringShadow3D)">
+    <path d="M 230 240 L 230 420" stroke="url(#goldPure)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 198 290 L 262 290" stroke="url(#goldPure)" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="230" cy="237" r="4.5" fill="url(#goldPure)"/>
+    <circle cx="195" cy="290" r="4.5" fill="url(#goldPure)"/>
+    <circle cx="265" cy="290" r="4.5" fill="url(#goldPure)"/>
+    <circle cx="230" cy="423" r="4.5" fill="url(#goldPure)"/>
+
+    <circle cx="265" cy="365" r="40" stroke="url(#goldPure)" stroke-width="9" fill="none"/>
+    <circle cx="265" cy="365" r="37" stroke="#ffffff" stroke-width="1.8" stroke-opacity="0.8" fill="none"/>
+
+    <circle cx="320" cy="365" r="40" stroke="url(#goldPure)" stroke-width="9" fill="none"/>
+    <circle cx="320" cy="365" r="37" stroke="#ffffff" stroke-width="1.8" stroke-opacity="0.8" fill="none"/>
+
+    <polygon points="320,320 324,326 320,332 316,326" fill="#ffffff" stroke="#c49f33" stroke-width="1"/>
+    <circle cx="320" cy="326" r="3" fill="#ffffff"/>
+    <line x1="311" y1="326" x2="329" y2="326" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="320" y1="317" x2="320" y2="335" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
